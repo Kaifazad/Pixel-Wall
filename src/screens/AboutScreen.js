@@ -87,7 +87,7 @@ const AboutScreen = () => {
           <List.Item
             title="GitHub"
             description="Pixel Wall is open-source, check it out on GitHub"
-            onPress={() => openLink(GITHUB_URL)}
+            onPress={() => openLink("https://github.com/Kaifazad/Pixel-Wall")}
             right={() => <List.Icon icon="open-in-new" />}
           />
           <List.Item
@@ -99,7 +99,7 @@ const AboutScreen = () => {
           <List.Item
             title="Report Bug"
             description="Report bugs or request new features"
-            onPress={() => openLink(REPORT_BUG_URL)}
+            onPress={() => openLink("https://github.com/Kaifazad/Pixel-Wall/issues")}
             right={() => <List.Icon icon="open-in-new" />}
           />
         </List.Section>
@@ -120,14 +120,10 @@ const AboutScreen = () => {
           <List.Subheader>LEGAL</List.Subheader>
           <List.Item
             title="Privacy Policy"
-            onPress={() => openLink(PRIVACY_POLICY_URL)}
+            onPress={() => openLink("https://github.com/Kaifazad/Pixel-Wall/blob/main/PRIVACY_POLICY.md")}
             right={() => <List.Icon icon="chevron-right" />}
           />
-          <List.Item
-            title="Terms & Conditions"
-            onPress={() => openLink(TERMS_CONDITIONS_URL)}
-            right={() => <List.Icon icon="chevron-right" />}
-          />
+          
          
         </List.Section>
       </ScrollView>

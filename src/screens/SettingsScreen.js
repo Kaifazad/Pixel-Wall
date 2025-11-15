@@ -293,7 +293,7 @@ const SettingsScreen = () => {
             fontWeight: "bold",
             color: colors.onSurface,
           }}
-          style={{ paddingLeft: 14 }}
+          style={{ marginLeft: -2 }}
         />
       </Appbar.Header>
 
