@@ -1,9 +1,42 @@
-# This file tells EAS Build what to ignore.
-# This is the most important line:
+# ============================================================
+# Core folders that MUST be ignored to reduce build size
+# ============================================================
 node_modules/
-
-# We can also ignore other junk that's not needed for the build.
 .expo/
+.expo-shared/
 dist/
 web-build/
+android/.cxx/
+android/app/build/
+ios/build/
+tmp/
+temp/
+
+# ============================================================
+# Git & local system files
+# ============================================================
 .git/
+.gitignore
+.env
+.env.local
+.env.production
+.env.development
+npm-debug.log
+yarn-error.log
+
+# ============================================================
+# Cache files (safe to ignore)
+# ============================================================
+*.log
+package-lock.json
+**/.DS_Store
+**/Thumbs.db
+.vscode/
+.idea/
+
+# ============================================================
+# Expo / EAS metadata that should NOT be uploaded
+# ============================================================
+assets/*.psd
+assets/*.ai
+assets/raw/

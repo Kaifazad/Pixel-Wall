@@ -12,10 +12,17 @@
       "distribution": "internal"
     },
     "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
       "autoIncrement": true
     }
   },
   "submit": {
-    "production": {}
+    "production": {
+      "android": {
+        "serviceAccountKeyPath": "./google-service-account.json"
+      }
+    }
   }
 }
