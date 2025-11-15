@@ -1,0 +1,9 @@
+# This file tells EAS Build what to ignore.
+# This is the most important line:
+node_modules/
+
+# We can also ignore other junk that's not needed for the build.
+.expo/
+dist/
+web-build/
+.git/
