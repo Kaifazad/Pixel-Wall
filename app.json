@@ -1,29 +1,65 @@
 {
   "expo": {
-    "name": "pixelwall",
-    "slug": "pixelwall",
+    "name": "Pixel Wall",
+    "slug": "pixel-wall",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "newArchEnabled": true,
+    "description": "Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunning high-quality wallpapers across various categories.",
+    "userInterfaceStyle": "dark",
+    "platforms": [
+      "android"
+    ],
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "splash": {
-      "image": "./assets/splash-icon.png",
       "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
+      "backgroundColor": "#000000"
     },
     "android": {
+      "package": "com.kaifazad.pixelwall",
+      "versionCode": 1,
+      "permissions": [
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_EXTERNAL_STORAGE",
+        "android.permission.WRITE_EXTERNAL_STORAGE",
+        "android.permission.READ_MEDIA_VISUAL_USER_SELECTED",
+        "android.permission.READ_MEDIA_IMAGES",
+        "android.permission.READ_MEDIA_VIDEO",
+        "android.permission.READ_MEDIA_AUDIO",
+        "android.permission.RECORD_AUDIO"
+      ],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundColor": "#000000"
       },
-      "edgeToEdgeEnabled": true
+      "softwareKeyboardLayoutMode": "pan"
     },
-    "web": {
-      "favicon": "./assets/favicon.png"
+    "plugins": [
+      [
+        "expo-media-library",
+        {
+          "photosPermission": "Allow Pixel Wall to save wallpapers to your gallery.",
+          "isAccessToMediaAudioEnabled": false
+        }
+      ],
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Allow Pixel Wall to access your photos."
+        }
+      ]
+    ],
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "jsEngine": "hermes",
+    "extra": {
+      "eas": {
+        "projectId": "d98e322f-c938-4aee-a4cc-2e72e9526612"
+      }
     }
   }
 }
