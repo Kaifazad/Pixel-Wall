@@ -2,12 +2,14 @@
   <img src="/assets/icon.png" width="60" style="vertical-align: middle; margin-right: 10px;" />
   Pixel Wall 🎨
 </h1>
+
+
 ![API](https://img.shields.io/badge/API-24%2B-34bf49.svg)
 [![GitHub Release](https://img.shields.io/github/v/release/Kaifazad/Pixel-Wall?label=Pixel%20Wall&sort=semver)](https://github.com/Kaifazad/Pixel-Wall/releases/latest)
 [![Expo](https://img.shields.io/badge/Built%20with-Expo-1B1F23?logo=expo&logoColor=white)](https://expo.dev/)
 [![React Native](https://img.shields.io/badge/Powered%20by-React%20Native-61dafb.svg?logo=react)](https://reactnative.dev/)
 
-A stunning, fast, and minimal wallpaper app that brings the best images from **Unsplash** right to your home and lock screens.
+Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunning high-quality wallpapers across various categories. Users can explore, search, upload their own images, and save favorites — all in a sleek, fast, and visually rich interface designed for effortless customization.
 
 ---
 
