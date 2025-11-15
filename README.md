@@ -1,7 +1,7 @@
-<img src="/assets/icon.png" width="192" align="right" hspace="20" />
-
-# Pixel Wall 🎨  
-
+<h1 align="left">
+  <img src="/assets/icon.png" width="60" style="vertical-align: middle; margin-right: 10px;" />
+  Pixel Wall 🎨
+</h1>
 ![API](https://img.shields.io/badge/API-24%2B-34bf49.svg)
 [![GitHub Release](https://img.shields.io/github/v/release/Kaifazad/Pixel-Wall?label=Pixel%20Wall&sort=semver)](https://github.com/Kaifazad/Pixel-Wall/releases/latest)
 [![Expo](https://img.shields.io/badge/Built%20with-Expo-1B1F23?logo=expo&logoColor=white)](https://expo.dev/)
