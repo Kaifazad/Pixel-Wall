@@ -61,11 +61,6 @@ Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunn
 
 ## 🚀 Getting Started  
 
-### 1️⃣ Clone the Repository  
-```bash
-git clone https://github.com/Kaifazad/Pixel-Wall.git
-cd Pixel-Wall
-```
 ###  2️⃣ Install dependencies
 ```bash
 npm install
