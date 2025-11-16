@@ -61,11 +61,11 @@ Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunn
 
 ## 🚀 Getting Started  
 
-###  2️⃣ Install dependencies
+###  1️⃣ Install dependencies
 ```bash
 npm install
 ```
-### 3️⃣ Add your Unsplash API key
+### 2️⃣ Add your Unsplash API key
 Create .env:
 ```.env
 UNSPLASH_ACCESS_KEY=your_key_here
@@ -77,7 +77,7 @@ eas build -p android --profile production
 Result:
 ➡️ /dist/*.aab (download from EAS dashboard)
 
-### 4️⃣ Run the app
+### 3️⃣ Run the app
 ```bash
 npx expo start
 ```
