@@ -3,7 +3,6 @@
   Pixel Wall 🎨
 </h1>
 
-
 ![API](https://img.shields.io/badge/API-24%2B-34bf49.svg)
 [![GitHub Release](https://img.shields.io/github/v/release/Kaifazad/Pixel-Wall?label=Pixel%20Wall&sort=semver)](https://github.com/Kaifazad/Pixel-Wall/releases/latest)
 [![Expo](https://img.shields.io/badge/Built%20with-Expo-1B1F23?logo=expo&logoColor=white)](https://expo.dev/)
@@ -11,7 +10,10 @@
 
 Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunning high-quality wallpapers across various categories. Users can explore, search, upload their own images, and save favorites — all in a sleek, fast, and visually rich interface designed for effortless customization.
 
----
+## 📥 Download (Coming Soon)
+<a href="#">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="200" />
+</a>
 
 ## 💎 Highlights  
 
@@ -37,7 +39,15 @@ Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunn
 > 🖼️ *Screenshots are stored in* `assets/screenshots/` *inside the repo.*
 
 ---
+## ❓ Why Pixel Wall?
+- Faster than most wallpaper apps  
+- No ads  
+- Clean Material You UI  
+- No tracking or analytics  
+- Fully open source  
+- Free forever  
 
+---
 ## ⚙️ Tech Stack  
 
 - ⚛️ **React Native** – Cross-platform framework  
@@ -55,3 +65,47 @@ Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunn
 ```bash
 git clone https://github.com/Kaifazad/Pixel-Wall.git
 cd Pixel-Wall
+```
+###  2️⃣ Install dependencies
+```bash
+npm install
+```
+### 3️⃣ Add your Unsplash API key
+Create .env:
+```.env
+UNSPLASH_ACCESS_KEY=your_key_here
+```
+### 📦 Build for Production (.AAB)
+```bash
+eas build -p android --profile production
+```
+Result:
+➡️ /dist/*.aab (download from EAS dashboard)
+
+### 4️⃣ Run the app
+```bash
+npx expo start
+```
+---
+## 🔒 Permissions
+- Internet (fetch wallpapers)
+- Media Library (save images)
+- Set Wallpaper (apply wallpapers)
+- No personal data is collected.
+---
+## 📸 Image Credits
+All images are sourced from the Unsplash API.  
+Please support photographers by visiting their profiles on Unsplash.
+
+---
+## 📄 License
+This project is licensed under the MIT License — see LICENSE.
+---
+<br/>
+
+<div align="center">
+Made with ❤️ by Kaif Azad
+
+If you enjoy using Pixel Wall, consider supporting the development!
+</div>
+
