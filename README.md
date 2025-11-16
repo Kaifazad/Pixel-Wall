@@ -11,7 +11,7 @@
 Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunning high-quality wallpapers across various categories. Users can explore, search, upload their own images, and save favorites — all in a sleek, fast, and visually rich interface designed for effortless customization.
 
 ## 📥 Download (Coming Soon)
-<a href="#">
+<a href="https://play.google.com/store/apps/details?id=com.kaifazad.pixelwall">
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="200" />
 </a>
 
