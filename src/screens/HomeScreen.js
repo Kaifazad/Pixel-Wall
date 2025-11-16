@@ -49,16 +49,6 @@ const NUM_COLUMNS = 2;
 const CARD_MARGIN = 8;
 const CARD_WIDTH = (width - CARD_MARGIN * (NUM_COLUMNS * 2)) / NUM_COLUMNS;
 
-const randomCategories = [
-  "Nature",
-  "Landscape",
-  "Mountains",
-  "Minimal",
-  "Space",
-  "Trees",
-  "Patterns",
-  "Abstract",
-];
 
 // ✅ REFINED WALLPAPER CARD
 const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
