@@ -1,6 +1,6 @@
 <h1 align="left">
   <img src="/assets/icon.png" width="60" style="vertical-align: middle; margin-right: 10px;" />
-  Pixel Wall 🎨
+  Pixel Wall
 </h1>
 
 ![API](https://img.shields.io/badge/API-24%2B-34bf49.svg)
@@ -10,7 +10,7 @@
 
 Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunning high-quality wallpapers across various categories. Users can explore, search, upload their own images, and save favorites — all in a sleek, fast, and visually rich interface designed for effortless customization.
 
-## 📥 Download (Coming Soon)
+## 📥 Download
 <a href="https://play.google.com/store/apps/details?id=com.kaifazad.pixelwall">
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="200" />
 </a>
