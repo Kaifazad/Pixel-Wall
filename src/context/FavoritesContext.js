@@ -9,7 +9,7 @@ const STORAGE_KEY = '@pixelwall_favorites';
 export const FavoritesProvider = ({ children }) => {
   const [favorites, setFavorites] = useState({});
 
-  // Load favorites on startup
+ 
   useEffect(() => {
     loadFavorites();
   }, []);
@@ -36,7 +36,7 @@ export const FavoritesProvider = ({ children }) => {
 
   const addFavorite = (photo) => {
     setFavorites((prev) => {
-      // ✅ FIX: Add new photo to the beginning of the object, not the end.
+   
       const updated = { [photo.id]: photo, ...prev };
       saveFavorites(updated);
       return updated;
@@ -57,7 +57,7 @@ export const FavoritesProvider = ({ children }) => {
   return (
     <FavoritesContext.Provider
       value={{
-        // Object.values() will now have the newest item at the start
+       
         favorites: Object.values(favorites),
         addFavorite,
         removeFavorite,
