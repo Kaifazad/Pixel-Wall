@@ -19,7 +19,7 @@ import InfoModal from "../components/InfoModal";
 import { SettingsContext } from "../context/SettingsContext";
 import { getImageUrl } from "../utils/imageHelpers";
 import ManageWallpaper, { TYPE } from "react-native-manage-wallpaper";
-import WallpaperTypeDialog from "../components/WallpaperTypeDialog"; // ✅ Added
+import WallpaperTypeDialog from "../components/WallpaperTypeDialog"; 
 
 const { width, height } = Dimensions.get("window");
 
@@ -37,7 +37,7 @@ const WallpaperPreviewScreen = ({ route }) => {
   const [toastType, setToastType] = useState("info");
   const [infoModalVisible, setInfoModalVisible] = useState(false);
   const [applying, setApplying] = useState(false);
-  const [typeDialogVisible, setTypeDialogVisible] = useState(false); // ✅ Added
+  const [typeDialogVisible, setTypeDialogVisible] = useState(false); 
 
   useEffect(() => {
     return () => {
@@ -71,7 +71,7 @@ const WallpaperPreviewScreen = ({ route }) => {
     }
   };
 
-  // ✅ Replaced old Alert/ActionSheet with theme dialog
+  
   const chooseWallpaperType = () => {
     setTypeDialogVisible(true);
   };
