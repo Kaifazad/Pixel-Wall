@@ -12,9 +12,9 @@ import {
 } from "react-native";
 import { useTheme, IconButton, List } from "react-native-paper";
 
-// Helper to format large numbers
+
 const formatNumber = (num) => {
-  const number = Number(num) || 0; // Ensure it's a number
+  const number = Number(num) || 0; 
   
   if (number >= 1000000) {
     return (number / 1000000).toFixed(1) + "M";
@@ -22,7 +22,7 @@ const formatNumber = (num) => {
   if (number >= 1000) {
     return (number / 1000).toFixed(1) + "K";
   }
-  return String(number); // Always return a string, even for "0"
+  return String(number); 
 };
 
 const InfoModal = ({ visible, onClose, photo }) => {
@@ -38,7 +38,7 @@ const InfoModal = ({ visible, onClose, photo }) => {
     description: photo.description || photo.alt_description || "No description",
     resolution: `${photo.width} x ${photo.height}`,
     likes: formatNumber(photo.likes),
-    color: photo.color, // Dominant color hex
+    color: photo.color, 
   };
 
   const exif = photo.exif;
