@@ -10,9 +10,9 @@ import {
   Dimensions,
   RefreshControl,
   Text,
-  Animated, // ✅ Added
-  Pressable, // ✅ Added
-  Platform, // ✅ Added
+  Animated, 
+  Pressable, 
+  Platform, 
 } from "react-native";
 import {
   Card,
@@ -30,15 +30,15 @@ import { getImageUrl } from "../utils/imageHelpers";
 import InfoModal from "../components/InfoModal";
 import WallpaperTypeDialog from "../components/WallpaperTypeDialog";
 import ManageWallpaper, { TYPE } from "react-native-manage-wallpaper";
-import * as Haptics from "expo-haptics"; // ✅ Added
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"; // ✅ Added
+import * as Haptics from "expo-haptics"; 
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"; 
 
 const { width, height } = Dimensions.get("window");
 const NUM_COLUMNS = 2;
 const CARD_MARGIN = 8;
 const CARD_WIDTH = (width - CARD_MARGIN * (NUM_COLUMNS * 2)) / NUM_COLUMNS;
 
-// ✅ REUSED WALLPAPER CARD LOGIC FOR FAVORITES
+
 const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
   const { colors, dark } = useTheme();
   const scaleAnim = useRef(new Animated.Value(1)).current;
@@ -212,7 +212,7 @@ const FavoritesScreen = () => {
     setSelected(null);
   };
 
-  // ✅ UPDATED: Now accepts optional item argument for direct download
+  
   const downloadImage = async (item) => {
     try {
       const permission = await MediaLibrary.requestPermissionsAsync();
@@ -279,7 +279,7 @@ const FavoritesScreen = () => {
     closePreview();
   };
 
-  // ✅ UPDATED: Use WallpaperCard instead of TouchableOpacity
+ 
   const renderItem = ({ item }) => (
     <WallpaperCard 
       item={item}
@@ -420,7 +420,7 @@ const FavoritesScreen = () => {
 
             <TouchableOpacity
               style={styles.iconContainer}
-              onPress={() => downloadImage(null)} // Pass null to use 'selected'
+              onPress={() => downloadImage(null)} 
             >
               <IconButton icon="download" size={24} iconColor={colors.tabIcon} />
               <Text style={[styles.iconLabel, { color: colors.tabIcon }]}>
@@ -458,7 +458,7 @@ const styles = StyleSheet.create({
   container: { flex: 1 },
   cardWrapper: { margin: CARD_MARGIN / 2 },
   card: { width: CARD_WIDTH, borderRadius: 12, overflow: "hidden" },
-  // ✅ Added Styles for Success Overlay
+
   successOverlay: {
     ...StyleSheet.absoluteFillObject,
     justifyContent: "center",
