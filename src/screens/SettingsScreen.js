@@ -9,8 +9,8 @@ import {
   Modal,
   Pressable,
   Linking,
-  Animated, // Added for custom switch
-  Easing,   // Added for custom switch
+  Animated, 
+  Easing,  
 } from "react-native";
 import {
   Text,
@@ -25,7 +25,7 @@ import ConfirmDialog from "../components/ConfirmDialog";
 import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons";
 import * as Haptics from "expo-haptics";
 
-// ✅ CUSTOM EXPRESSIVE SWITCH COMPONENT
+
 const ExpressiveSwitch = ({ value, onValueChange }) => {
   const { colors } = useTheme();
   const anim = useRef(new Animated.Value(value ? 1 : 0)).current;
@@ -35,7 +35,7 @@ const ExpressiveSwitch = ({ value, onValueChange }) => {
       toValue: value ? 1 : 0,
       duration: 300,
       easing: Easing.out(Easing.exp),
-      useNativeDriver: false, // False needed for color interpolation
+      useNativeDriver: false, 
     }).start();
   }, [value]);
 
@@ -44,10 +44,10 @@ const ExpressiveSwitch = ({ value, onValueChange }) => {
     onValueChange(!value);
   };
 
-  // Interpolations
+
   const trackColor = anim.interpolate({
     inputRange: [0, 1],
-    // Off: Surface Variant (Greyish), On: Primary
+ 
     outputRange: [colors.elevation.level3, colors.primary] 
   });
 
@@ -58,13 +58,13 @@ const ExpressiveSwitch = ({ value, onValueChange }) => {
 
   const thumbColor = anim.interpolate({
     inputRange: [0, 1],
-    // Off: Outline Color, On: OnPrimary (White/Black depending on theme)
+    
     outputRange: [colors.outline, colors.onPrimary]
   });
 
   const thumbTranslate = anim.interpolate({
     inputRange: [0, 1],
-    outputRange: [2, 22] // Move from left (2px) to right (22px)
+    outputRange: [2, 22] 
   });
 
   const iconScale = anim.interpolate({
@@ -312,7 +312,7 @@ const SettingsScreen = () => {
           />
         </List.Section>
 
-        {/* ✅ GESTURES SECTION WITH NEW EXPRESSIVE SWITCH */}
+        {/* GESTURES SECTION WITH NEW EXPRESSIVE SWITCH */}
         <List.Section style={[styles.section, { backgroundColor: colors.surface }]}>
           <List.Subheader>GESTURES</List.Subheader>
           <List.Item
