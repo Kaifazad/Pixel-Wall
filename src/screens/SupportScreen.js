@@ -1,11 +1,11 @@
 // src/screens/SupportScreen.js
-import React, { useState } from 'react'; // ✅ Import useState
-import { View, StyleSheet, ScrollView, Alert, Linking, Modal } from 'react-native'; // ✅ Import Modal
+import React, { useState } from 'react'; 
+import { View, StyleSheet, ScrollView, Alert, Linking, Modal } from 'react-native';
 import { Appbar, Text, useTheme, Card, List } from 'react-native-paper';
 import { useNavigation } from '@react-navigation/native';
-import PaymentMethodModal from '../components/PaymentMethodModal'; // ✅ 1. Import new modal
+import PaymentMethodModal from '../components/PaymentMethodModal'; 
 
-// ✅ 2. This array no longer needs URLs
+
 const donationItems = [
   {
     id: 'boost',
@@ -37,11 +37,11 @@ const SupportScreen = () => {
   const { colors } = useTheme();
   const navigation = useNavigation();
 
-  // ✅ 3. Add state to control the new modal
+ 
   const [modalVisible, setModalVisible] = useState(false);
   const [selectedItem, setSelectedItem] = useState(null);
 
-  // ✅ 4. This function now sets state instead of linking
+ 
   const handleDonationPress = (item) => {
     setSelectedItem(item);
     setModalVisible(true);
@@ -49,7 +49,7 @@ const SupportScreen = () => {
 
   const closeModal = () => {
     setModalVisible(false);
-    // A small delay helps the modal close before clearing the item
+  
     setTimeout(() => {
       setSelectedItem(null);
     }, 200);
@@ -104,7 +104,7 @@ const SupportScreen = () => {
         ))}
       </ScrollView>
 
-      {/* ✅ 6. Add the new modal component */}
+      {/*  Add the new modal component */}
       <PaymentMethodModal 
         visible={modalVisible}
         onClose={closeModal}
