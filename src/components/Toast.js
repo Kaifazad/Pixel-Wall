@@ -13,7 +13,7 @@ const Toast = ({ visible, message, type = 'info', onHide, duration = 2000 }) => 
 
   useEffect(() => {
     if (visible) {
-      // Show animation
+     
       Animated.parallel([
         Animated.timing(fadeAnim, {
           toValue: 1,
@@ -27,7 +27,7 @@ const Toast = ({ visible, message, type = 'info', onHide, duration = 2000 }) => 
         }),
       ]).start();
 
-      // Auto hide after duration
+    
       const timer = setTimeout(() => {
         hideToast();
       }, duration);
@@ -96,7 +96,7 @@ const Toast = ({ visible, message, type = 'info', onHide, duration = 2000 }) => 
 const styles = StyleSheet.create({
   container: {
     position: 'absolute',
-    bottom: 100, // Added bottom margin
+    bottom: 100, 
     left: 0,
     right: 0,
     alignItems: 'center',
@@ -120,7 +120,7 @@ const styles = StyleSheet.create({
     overflow: 'hidden',
   },
   message: {
-    fontSize: 13, // Smaller message
+    fontSize: 13, 
     fontWeight: '500',
     textAlign: 'center',
     letterSpacing: 0.2,
