@@ -3,7 +3,7 @@ import React from 'react';
 import { View, StyleSheet, Modal, Pressable, Linking, Alert } from 'react-native';
 import { useTheme, Text, List, IconButton } from 'react-native-paper';
 
-// ✅ UPDATED: Replaced placeholder with your URL
+
 const BUY_ME_A_COFFEE_URL = 'https://buymeacoffee.com/kaifazad';
 
 const PaymentMethodModal = ({ visible, onClose, item }) => {
@@ -12,7 +12,7 @@ const PaymentMethodModal = ({ visible, onClose, item }) => {
   if (!item) return null;
 
   const handleWebPayment = async () => {
-    onClose(); // Close the modal first
+    onClose(); 
     try {
       const supported = await Linking.canOpenURL(BUY_ME_A_COFFEE_URL);
       if (supported) {
@@ -47,7 +47,7 @@ const PaymentMethodModal = ({ visible, onClose, item }) => {
       >
         <Pressable
           style={[styles.modalCard, { backgroundColor: colors.surface }]}
-          onPress={() => {}} // Stop backdrop press
+          onPress={() => {}} 
         >
           <View style={styles.header}>
             <Text style={[styles.title, { color: colors.onSurface }]}>
@@ -94,7 +94,7 @@ const styles = StyleSheet.create({
   modalCard: {
     width: '100%',
     maxWidth: 400,
-    borderRadius: 28, // Matches your other custom modals
+    borderRadius: 28, 
     paddingBottom: 8,
   },
   header: {
