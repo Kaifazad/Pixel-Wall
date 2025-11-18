@@ -10,9 +10,9 @@ import {
   Image,
   Modal,
   Text,
-  Animated, // ✅ Added
-  Pressable, // ✅ Added
-  Platform, // ✅ Added
+  Animated, 
+  Pressable, 
+  Platform,
 } from "react-native";
 import {
   Card,
@@ -31,19 +31,19 @@ import { getImageUrl } from "../utils/imageHelpers";
 import InfoModal from "../components/InfoModal";
 import WallpaperTypeDialog from "../components/WallpaperTypeDialog";
 import ManageWallpaper, { TYPE } from "react-native-manage-wallpaper";
-import * as Haptics from "expo-haptics"; // ✅ Added
-import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"; // ✅ Added
+import * as Haptics from "expo-haptics"; 
+import MaterialCommunityIcons from "react-native-vector-icons/MaterialCommunityIcons"; 
 
 const { width, height } = Dimensions.get("window");
 const BASE_URL =
   "https://pixelwall-api.netlify.app/.netlify/functions/wallpapers";
 
-// Layout constants (Matched to HomeScreen)
+
 const NUM_COLUMNS = 2;
 const CARD_MARGIN = 8;
 const CARD_WIDTH = (width - CARD_MARGIN * (NUM_COLUMNS * 2)) / NUM_COLUMNS;
 
-// ✅ REUSED WALLPAPER CARD COMPONENT
+
 const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
   const { colors, dark } = useTheme();
   const scaleAnim = useRef(new Animated.Value(1)).current;
@@ -293,7 +293,7 @@ const CollectionsScreen = () => {
     setSelectedPhoto(null);
   };
 
-  // ✅ UPDATED: Now accepts optional item for direct download
+ 
   const downloadImage = async (item) => {
     try {
       const permission = await MediaLibrary.requestPermissionsAsync();
@@ -389,7 +389,7 @@ const CollectionsScreen = () => {
     );
   };
 
-  // ✅ UPDATED: Uses WallpaperCard instead of TouchableOpacity
+  
   const renderPhoto = ({ item }) => (
     <WallpaperCard 
       item={item}
@@ -595,7 +595,7 @@ const styles = StyleSheet.create({
     borderRadius: 12,
     overflow: "hidden",
   },
-  // ✅ Success Overlay Styles
+
   successOverlay: {
     ...StyleSheet.absoluteFillObject,
     justifyContent: "center",
