@@ -96,7 +96,7 @@ const HeaderMenu = ({ visible, onClose, navigation }) => {
   );
 };
 
-// ✅ NEW EXPRESSIVE HEADER COMPONENT
+
 const Header = ({ title, onSearch, onClearSearch, navigation }) => {
   const theme = useTheme();
   const [searchMode, setSearchMode] = useState(false);
@@ -105,22 +105,22 @@ const Header = ({ title, onSearch, onClearSearch, navigation }) => {
 
   return (
     <Appbar.Header 
-      mode="center-aligned" // Keeps height standard, but we style content manually
+      mode="center-aligned" 
       elevated={false} 
       style={{ backgroundColor: theme.colors.surface }}
     >
       {!searchMode ? (
         <>
-          {/* Removed empty view spacer to allow left alignment */}
+     
           
           <Appbar.Content
             title={title}
             titleStyle={{
               color: theme.colors.onSurface,
               fontSize: 24, 
-              fontWeight: "bold", // ✅ Bold
-              textAlign: "left",  // ✅ Left Aligned
-              marginLeft: 8,      // ✅ Slight spacing from edge
+              fontWeight: "bold", 
+              textAlign: "left", 
+              marginLeft: 8,    
             }}
           />
 
@@ -145,17 +145,17 @@ const Header = ({ title, onSearch, onClearSearch, navigation }) => {
               />
             </View>
           ) : (
-             // Balance slightly if needed, but for left align usually not required
+           
              <View style={{ width: 8 }} /> 
           )}
         </>
       ) : (
-        // ✅ NEW M3 SEARCH PILL DESIGN
+      
         <View style={[styles.searchContainer, { backgroundColor: theme.colors.surface }]}>
           <View style={[
             styles.searchPill, 
             { 
-              backgroundColor: theme.colors.elevation.level2, // Tonal background
+              backgroundColor: theme.colors.elevation.level2, 
               borderRadius: 50 
             }
           ]}>
@@ -176,14 +176,13 @@ const Header = ({ title, onSearch, onClearSearch, navigation }) => {
               onChangeText={setQuery}
               onSubmitEditing={() => {
                 onSearch(query);
-                // Don't close searchMode immediately so user sees result context
-                // setSearchMode(false); 
+               
               }}
               style={[
                 styles.searchInput,
                 {
                   color: theme.colors.onSurface,
-                  backgroundColor: 'transparent' // Parent handles background
+                  backgroundColor: 'transparent'
                 },
               ]}
               underlineColor="transparent"
@@ -309,7 +308,7 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: "row",
     alignItems: "center",
-    height: 48, // Taller, clickable pill
+    height: 48,
     paddingHorizontal: 4,
   },
   searchInput: {
@@ -323,12 +322,12 @@ const styles = StyleSheet.create({
     backgroundColor: "rgba(0,0,0,0.4)",
     justifyContent: "flex-start",
     alignItems: "flex-end",
-    paddingTop: 70, // Adjusted for new header height
+    paddingTop: 70,
     paddingRight: 12,
   },
   menuBox: {
     width: 180,
-    borderRadius: 16, // Larger rounded corners for M3
+    borderRadius: 16,
     overflow: "hidden",
     elevation: 4,
   },
@@ -339,7 +338,7 @@ const styles = StyleSheet.create({
   },
   menuText: {
     fontSize: 16,
-    fontWeight: "400", // Regular weight for M3 body text
+    fontWeight: "400",
   },
 });
 
