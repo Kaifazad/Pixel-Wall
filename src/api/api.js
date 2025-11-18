@@ -18,7 +18,7 @@ const fetchData = async (params) => {
   }
 };
 
-// expects Netlify function to understand endpoint & page
+
 export const fetchWallpapers = (page = 1, per_page = 20) => {
   return fetchData({
     endpoint: 'photos',
