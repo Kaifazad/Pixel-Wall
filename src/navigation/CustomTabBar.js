@@ -24,7 +24,7 @@ function CustomTabBar({ state, descriptors, navigation }) {
   const currentRoute = state.routes[state.index];
   const isScrollingDown = currentRoute?.params?.isScrollingDown;
 
-  // animate hide/show
+ 
   useEffect(() => {
     Animated.spring(translateY, {
       toValue: isScrollingDown ? 100 : 0,
@@ -50,7 +50,6 @@ function CustomTabBar({ state, descriptors, navigation }) {
     }
   };
 
-  // small fade when theme changes
   const fadeAnim = useRef(new Animated.Value(1)).current;
   useEffect(() => {
     Animated.timing(fadeAnim, {
@@ -135,7 +134,7 @@ const styles = StyleSheet.create({
     flex: 1,
     alignItems: "center",
     justifyContent: "center",
-    paddingBottom: 8, // Nudge content up
+    paddingBottom: 8,
   },
   iconLabel: {
     fontSize: 12,
