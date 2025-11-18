@@ -50,9 +50,9 @@ const CARD_MARGIN = 8;
 const CARD_WIDTH = (width - CARD_MARGIN * (NUM_COLUMNS * 2)) / NUM_COLUMNS;
 
 
-// ✅ REFINED WALLPAPER CARD
+
 const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
-  const { colors, dark } = useTheme(); // Get theme internally
+  const { colors, dark } = useTheme(); 
   const scaleAnim = useRef(new Animated.Value(1)).current;
   
   const delayTimerRef = useRef(null); 
@@ -69,11 +69,11 @@ const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
     delayTimerRef.current = setTimeout(() => {
       Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Light);
 
-      // ✅ SQUEEZE ANIMATION ONLY (No Border)
+
       Animated.timing(scaleAnim, {
-        toValue: 0.90, // Squeezes to 90% size
+        toValue: 0.90, 
         duration: 300,
-        useNativeDriver: true, // Smooth native animation
+        useNativeDriver: true,
       }).start();
 
       longPressTimerRef.current = setTimeout(() => {
@@ -98,7 +98,7 @@ const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
     
     onLongPressSuccess(item);
 
-    // Keep success visible for 1.5s then reset
+ 
     setTimeout(() => {
         setIsSuccess(false);
         resetAnimation();
@@ -132,7 +132,7 @@ const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
           styles.card,
           {
             transform: [{ scale: scaleAnim }],
-            // Removed border styles completely
+            
           },
         ]}
       >
@@ -157,7 +157,7 @@ const WallpaperCard = ({ item, settings, onPress, onLongPressSuccess }) => {
                         <MaterialCommunityIcons 
                             name="check" 
                             size={36} 
-                            color={colors.onSurface} // Adaptive color (Black/White)
+                            color={colors.onSurface}
                         />
                     </BlurView>
                 </View>
@@ -600,7 +600,7 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     zIndex: 10,
-    backgroundColor: 'rgba(0,0,0,0.15)' // Very subtle dim
+    backgroundColor: 'rgba(0,0,0,0.15)'
   },
   blurContainer: {
     overflow: "hidden",
