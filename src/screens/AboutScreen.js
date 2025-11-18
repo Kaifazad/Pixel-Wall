@@ -4,13 +4,12 @@ import { View, StyleSheet, ScrollView, Linking, Alert, Image } from "react-nativ
 import { useTheme, Appbar, List, Text } from "react-native-paper";
 import { useNavigation } from "@react-navigation/native";
 
-// --- TODO: Replace these with your actual links ---
-const GITHUB_URL = "https://github.com/your-username/pixelwall";
+
+const GITHUB_URL = "https://github.com/Kaifazad/Pixel-Wall";
 const RATE_APP_URL = "market://details?id=com.pixelwall";
-const REPORT_BUG_URL = "https://github.com/your-username/pixelwall/issues";
-const PRIVACY_POLICY_URL = "https://your-website.com/privacy";
-const TERMS_CONDITIONS_URL = "https://your-website.com/terms";
-// ---
+const REPORT_BUG_URL = "https://github.com/Kaifazad/Pixel-Wall/issues";
+const PRIVACY_POLICY_URL = "https://github.com/Kaifazad/Pixel-Wall/blob/main/PRIVACY_POLICY.md";
+
 
 const AboutScreen = () => {
   const { colors } = useTheme();
@@ -87,7 +86,7 @@ const AboutScreen = () => {
           <List.Item
             title="GitHub"
             description="Pixel Wall is open-source, check it out on GitHub"
-            onPress={() => openLink("https://github.com/Kaifazad/Pixel-Wall")}
+            onPress={() => openLink(GITHUB_URL)}
             right={() => <List.Icon icon="open-in-new" />}
           />
           <List.Item
@@ -99,7 +98,7 @@ const AboutScreen = () => {
           <List.Item
             title="Report Bug"
             description="Report bugs or request new features"
-            onPress={() => openLink("https://github.com/Kaifazad/Pixel-Wall/issues")}
+            onPress={() => openLink(REPORT_BUG_URL)}
             right={() => <List.Icon icon="open-in-new" />}
           />
         </List.Section>
@@ -109,8 +108,7 @@ const AboutScreen = () => {
           <List.Subheader>DEVELOPER</List.Subheader>
           <List.Item
             title="Kaif Azad"
-            // Removed description="Developer" to avoid redundancy
-            // Removed onPress to remove the link
+           
             left={(props) => <List.Icon {...props} icon="account-circle-outline" />}
           />
         </List.Section>
@@ -120,7 +118,7 @@ const AboutScreen = () => {
           <List.Subheader>LEGAL</List.Subheader>
           <List.Item
             title="Privacy Policy"
-            onPress={() => openLink("https://github.com/Kaifazad/Pixel-Wall/blob/main/PRIVACY_POLICY.md")}
+            onPress={() => openLink(PRIVACY_POLICY_URL)}
             right={() => <List.Icon icon="chevron-right" />}
           />
           
