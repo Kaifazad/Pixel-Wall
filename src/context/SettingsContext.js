@@ -21,7 +21,7 @@ export const SettingsProvider = ({ children }) => {
     longPressDownload: true 
   });
 
-  // Define light and dark themes (Kept exactly as provided)
+
   const lightTheme = {
     ...MD3LightTheme,
     dark: false,
@@ -132,24 +132,24 @@ export const SettingsProvider = ({ children }) => {
 
     isAnimating.current = true;
     
-    // 1. Capture the OLD background color to cover the screen
+   
     setTransitionBackgroundColor(currentTheme.colors.background);
 
-    // 2. Fade IN Overlay (Fast)
+  
     Animated.timing(fadeAnim, {
       toValue: 1,
-      duration: 150, // Faster fade in to hide the switch
+      duration: 150, 
       easing: Easing.out(Easing.poly(4)),
       useNativeDriver: true,
     }).start(() => {
       
-      // 3. Switch Theme (While hidden)
+     
       setCurrentTheme(targetTheme);
       
-      // 4. Fade OUT Overlay (Smooth)
+      
       Animated.timing(fadeAnim, {
         toValue: 0,
-        duration: 250, // Slower reveal
+        duration: 250, 
         easing: Easing.in(Easing.poly(4)),
         useNativeDriver: true,
       }).start(() => {
