@@ -4,30 +4,48 @@
 </h1>
 
 ![API](https://img.shields.io/badge/API-24%2B-34bf49.svg)
-[![GitHub Release](https://img.shields.io/github/v/release/Kaifazad/Pixel-Wall?label=Pixel%20Wall&sort=semver)](https://github.com/Kaifazad/Pixel-Wall/releases/latest)
-[![Expo](https://img.shields.io/badge/Built%20with-Expo-1B1F23?logo=expo&logoColor=white)](https://expo.dev/)
-[![React Native](https://img.shields.io/badge/Powered%20by-React%20Native-61dafb.svg?logo=react)](https://reactnative.dev/)
+![Expo](https://img.shields.io/badge/Built%20with-Expo-1B1F23?logo=expo&logoColor=white)
+![React Native](https://img.shields.io/badge/Powered%20by-React%20Native-61dafb.svg?logo=react)
 
-Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunning high-quality wallpapers across various categories. Users can explore, search, upload their own images, and save favorites — all in a sleek, fast, and visually rich interface designed for effortless customization.
+Pixel Wall is a modern wallpaper app offering a huge library of high-quality, hand-selected wallpapers across all categories. Designed with a clean Material You UI, Pixel Wall makes personalizing your device fast, smooth, and enjoyable.
 
 ## 📥 Download
 <a href="https://play.google.com/store/apps/details?id=com.kaifazad.pixelwall">
   <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" width="200" />
 </a>
 
-## 💎 Highlights  
+---
 
-- **Beautiful UI:** Built with Material You 3 design for a clean, modern experience.  
-- **High-Resolution Wallpapers:** Directly powered by the Unsplash API.  
-- **Instant Apply:** Set wallpapers to Home, Lock, or both with one tap.  
-- **Favorites:** Save your favorite wallpapers locally.  
-- **Curated Collections:** Browse fresh categories every time you open the app.  
-- **Offline Access:** Recently viewed wallpapers stay cached on your device.  
-- **Light & Dark Mode:** Adapts automatically to your system theme.  
+# 💎 Key Features
+
+### **Free Features**
+- **Thousands of stunning wallpapers** powered by Unsplash  
+- **Fast browsing** with smooth Material You transitions  
+- **Apply wallpapers** to Home, Lock, or both  
+- **Save favorites** locally  
+- **Browse curated collections**  
+- **Light & Dark mode** support  
+- **Offline view** of recently seen wallpapers  
 
 ---
 
-## 🖼️ Previews  
+# ⭐ Pixel Wall Pro (Premium)
+
+Upgrade to **Pixel Wall Pro** and unlock the full experience:
+
+- **Unlimited Favorites** (Free users get 20)  
+- **Full-Quality Wallpaper Downloads**  
+- **Exclusive Pro-Only Collections**  
+- **Early Access to New Features**  
+- **Ad-Free Experience (No Ads Ever)**  
+- **Priority Updates & Improvements**  
+
+Pro is a **one-time payment** or **subscription**, depending on your region.  
+Payments are processed securely via **Google Play Billing** (Sandbox-tested).
+
+---
+
+# 🖼️ App Previews  
 
 <p align="center">
 <img src="/assets/11.png" height="350" />
@@ -36,71 +54,36 @@ Pixel Wall is a modern wallpaper app powered by the Unsplash API, offering stunn
 <img src="/assets/44.png" height="350" />
 </p>
 
-> 🖼️ *Screenshots are stored in* `assets/screenshots/` *inside the repo.*
-
 ---
-## ❓ Why Pixel Wall?
-- Faster than most wallpaper apps  
-- No ads  
+
+# ❓ Why Choose Pixel Wall?
+
 - Clean Material You UI  
-- No tracking or analytics  
-- Fully open source  
-- Free forever  
-
----
-## ⚙️ Tech Stack  
-
-- ⚛️ **React Native** – Cross-platform framework  
-- 🧩 **Expo (Managed Workflow)** – Simplified build and runtime  
-- 🎨 **React Native Paper** – Material Design 3 components  
-- 🌐 **Unsplash API** – Free, high-quality photography source  
-- 💾 **Expo File System & Media Library** – For downloading wallpapers  
-- 🖼️ **react-native-manage-wallpaper** – Set wallpapers directly  
+- Super fast and lightweight  
+- Only high-quality wallpapers  
+- Zero tracking, zero analytics  
+- No hidden permissions  
+- Regular updates with new features  
+- Pro option available for power users  
 
 ---
 
-## 🚀 Getting Started  
+# 🔒 Permissions Used
+- **Internet** – fetch wallpapers  
+- **Set Wallpaper** – apply wallpaper to your device  
+- **Media Library** – save wallpapers to gallery  
 
-###  1️⃣ Install dependencies
-```bash
-npm install
-```
-### 2️⃣ Add your Unsplash API key
-Create .env:
-```.env
-UNSPLASH_ACCESS_KEY=your_key_here
-```
-### 📦 Build for Production (.AAB)
-```bash
-eas build -p android --profile production
-```
-Result:
-➡️ /dist/*.aab (download from EAS dashboard)
-
-### 3️⃣ Run the app
-```bash
-npx expo start
-```
----
-## 🔒 Permissions
-- Internet (fetch wallpapers)
-- Media Library (save images)
-- Set Wallpaper (apply wallpapers)
-- No personal data is collected.
----
-## 📸 Image Credits
-All images are sourced from the Unsplash API.  
-Please support photographers by visiting their profiles on Unsplash.
+Pixel Wall does **not collect or store personal data**.
 
 ---
-## 📄 License
-This project is licensed under the MIT License — see LICENSE.
+
+# 📸 Image Credits
+All images are fetched from the official **Unsplash API**.  
+Please support photographers on Unsplash.
 ---
-<br/>
 
 <div align="center">
 Made with ❤️ by Kaif Azad
-
-If you enjoy using Pixel Wall, consider supporting the development!
+<br/><br/>
+If you enjoy using Pixel Wall, consider upgrading to Pro and supporting development!
 </div>
-
