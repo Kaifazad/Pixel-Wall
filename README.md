@@ -33,15 +33,15 @@ Pixel Wall is a modern wallpaper app offering a huge library of high-quality, ha
 
 Upgrade to **Pixel Wall Pro** and unlock the full experience:
 
-- **Unlimited Favorites** (Free users get 20)  
-- **Full-Quality Wallpaper Downloads**  
-- **Exclusive Pro-Only Collections**  
-- **Early Access to New Features**  
-- **Ad-Free Experience (No Ads Ever)**  
-- **Priority Updates & Improvements**  
+- 🗓️ **Automatic Daily Wallpaper Changer (Beta)**
+- 🖼️ **RAW / Ultra HD Quality**
+- 👁️ **Full Resolution Previews**
+- ♾️ **Infinite Wallpaper Scrolling**
+- 💾 **Unlimited Favorite Storage**
+- ❤️ **Support Ongoing App Development**
 
 Pro is a **one-time payment** or **subscription**, depending on your region.  
-Payments are processed securely via **Google Play Billing** (Sandbox-tested).
+Payments are processed securely via **Google Play Billing** .
 
 ---
 
@@ -78,9 +78,9 @@ Pixel Wall does **not collect or store personal data**.
 ---
 
 # 📸 Image Credits
-All images are fetched from the official **Unsplash API**.  
-Please support photographers on Unsplash.
----
+
+<p>All images are fetched from the official Unsplash API.  
+Please support photographers on Unsplash.</p>
 
 <div align="center">
 Made with ❤️ by Kaif Azad
