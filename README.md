@@ -47,11 +47,13 @@ Payments are processed securely via **Google Play Billing** .
 
 # 🖼️ App Previews  
 
-<p align="center">
-<img src="/assets/11.png" height="350" />
-<img src="/assets/22.png" height="350" />
-<img src="/assets/33.png" height="350" />
-<img src="/assets/44.png" height="350" />
+<p align="left">
+<img src="/assets/SS1.png" height="350" />
+<img src="/assets/SS2.png" height="350" />
+<img src="/assets/SS6.png" height="350" />
+<img src="/assets/SS3.png" height="350" />
+<img src="/assets/SS4.png" height="350" />
+<img src="/assets/SS5.png" height="350" />
 </p>
 
 ---
