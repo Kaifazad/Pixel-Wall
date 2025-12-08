@@ -50,7 +50,6 @@ Payments are processed securely via **Google Play Billing** .
 <p align="left">
 <img src="/assets/SS1.png" height="350" />
 <img src="/assets/SS2.png" height="350" />
-<img src="/assets/SS6.png" height="350" />
 <img src="/assets/SS3.png" height="350" />
 <img src="/assets/SS4.png" height="350" />
 <img src="/assets/SS5.png" height="350" />
